@@ -438,6 +438,15 @@ if (portletTitleBasedNavigation) {
 	);
 </aui:script>
 
+<script>
+setTimeout(
+	function() 
+	{
+		$("#<portlet:namespace />titleEditor").focus();
+	}
+	, 1000);
+</script>
+
 <%
 if ((wikiPage != null) && !wikiPage.isNew()) {
 	PortletURL viewPageURL = wikiURLHelper.getViewPageURL(node, title);
